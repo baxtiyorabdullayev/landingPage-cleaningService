@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Navbar section  */
+.navbar {
+  width: 100%;
+  background: rgba(47, 59, 227, 0.574);
+  backdrop-filter: blur(20px);
+  padding: 10px 90px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  border-radius: 0 0 15px 15px;
+}
+
+/*Navbar section -- menus  */
+.menus {
+  display: flex;
+  width: 500px;
+}
+
+.menus a {
+  margin: 12px;
+  color: #ffffff;
+  font-size: 00.9rem;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menus a:hover {
+  color: #baed29;
+  transform: translateY(-2px);
+  transition: 0.4s;
+}
+
+/*Navbar section -- logo */
+.logo {
+  width: 200px;
+  text-align: center;
+}
+
+.logo-name {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.logo-motto {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 0.5rem;
+  letter-spacing: 0.3rem;
+}
+
+/* Navbar section --phone number  */
+.call {
+  width: 500px;
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.call-text,
+.call-number {
+  margin-bottom: 7px;
+  color: #ffffff;
+}
+
+.fa-phone {
+  margin: 5px;
+  color: #baed29;
+}
+
+/* Home section  */
+.home-section {
+  padding-top: 150px;
+  padding-left: 150px;
+  padding-bottom: 30px;
+  background: linear-gradient(
+      180deg,
+      rgba(39, 38, 64, 0.69) 0%,
+      rgba(39, 38, 64, 0) 70.92%,
+      #272640 149.57%
+    ),
+    url("./images/backgorund.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+/* Home section  --booking form */
+.booking-form {
+  padding: 20px 35px;
+  margin-right: 40px;
+  width: 500px;
+  height: 450px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+}
+
+.booking-fomr__title {
+  margin: 10px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.booking-fomr__subtitle {
+  margin: 25px 10px;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+input,
+select {
+  padding: 12px;
+  margin: 4px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.booking-form__button {
+  margin: 15px 5px;
+  padding: 7px 15px;
+  text-transform: capitalize;
+  background-color: #baed29;
+  border: none;
+  border-radius: 15px;
+}
+
+/* Home section  --information */
+
+.information {
+  width: 700px;
+}
+
+.information-title {
+  width: 500px;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.information-subtitle {
+  width: 500px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 0.7rem;
+  line-height: 1.8rem;
+}
+
+.information-carusel {
+  width: 800px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 34px 135px rgba(0, 0, 0, 0.04),
+    0px 13.0963px 43px rgba(0, 0, 0, 0.1),
+    0px 2.77037px 11px rgba(0, 0, 0, 0.0157037);
+  backdrop-filter: blur(30px);
+  border: 1px solid #eeeeee;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.information-carusel img {
+  margin: 5px;
+  width: 180px;
+  height: 180px;
+}
+
+/* About section  */
+.about-section {
+  padding: 150px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* About section --image */
+.about-section__image {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section__image1 {
+  width: 200px;
+  margin: 15px;
+}
+
+.about-section__image2 {
+  width: 250px;
+  margin: 15px;
+}
+
+/* About section --info*/
+.about-section__info {
+  width: 50%;
+}
+
+.about-info__title {
+  font-size: 2rem;
+  color: #272640;
+  width: 80%;
+}
+
+.about-info__subtitle {
+  margin: 10px 0;
+  line-height: 1.7rem;
+  color: #979797;
+  width: 90%;
+}
+
+.about-info__checks {
+  margin: 10px 0;
+  line-height: 1.8rem;
+  color: #979797;
+  width: 50%;
+}
+
+.about-info__checks div i {
+  margin-right: 5px;
+  padding: 5px;
+  color: #272640;
+  background-color: #f1fbd4;
+  border-radius: 50%;
+}
+
+.about-info__image img {
+  width: 500px;
+}
+
+/* solution section  */
+.solution-header {
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.solution-header_title {
+  font-size: 2rem;
+  color: #272640;
+}
+
+.solution-header_subtitle {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  color: #979797;
+}
+
+.solution-header_buttons i {
+  padding: 15px 20px;
+  margin: 5px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+.solution-header_buttons .fa-angle-right {
+  background-color: #baed29;
+}
+
+.solution-header_buttons .fa-angle-left {
+  border: 3px solid #baed29;
+}
+
+/* solution section  --cards*/
+.solution-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.solution-card {
+  padding: 20px 10px;
+  margin-bottom: 40px;
+  width: 300px;
+  background: #ffffff;
+  box-shadow: 0px 34px 135px rgba(0, 0, 0, 0.04),
+    0px 13.0963px 43px rgba(0, 0, 0, 0.1),
+    0px 2.77037px 11px rgba(0, 0, 0, 0.0157037);
+  backdrop-filter: blur(30px);
+  border-radius: 24px;
+  text-align: center;
+}
+
+.solution-card img {
+  width: 100%;
+  height: 150pxs;
+  margin-bottom: 15px;
+}
+
+.solution-card h2 {
+  color: #272640;
+  padding-top: 10px;
+}
+
+.solution-card p {
+  margin: 10px 0;
+  font-size: 0.8rem;
+  color: #979797;
+}
+
+.solution-card a {
+  color: #baed29;
+}
+
+/* how we work section  */
+.how-section {
+  padding: 50px 30px;
+}
+
+.how-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #272640;
+}
+
+.how-subtitle {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  color: #979797;
+  text-align: center;
+}
+
+.how-carusel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic img {
+  position: relative;
+  margin: 10px 30px;
+  width: 95%;
+}
+
+.pic .fa-play {
+  padding: 15px 20px;
+  margin: 5px;
+  position: relative;
+  top: -350px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #baed29;
+  border: 20px solid rgba(255, 255, 255, 0.711);
+}
+
+.how-carusel i {
+  padding: 15px 20px;
+  margin: 5px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  border: 2px solid #baed29;
+}
+
+/* booking section  */
+.booking-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.booking-section__info {
+  width: 500px;
+}
+
+.booking-info__title {
+  font-size: 2rem;
+  color: #272640;
+  margin-bottom: 30px;
+}
+
+.booking-info__subtitle {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  color: #979797;
+  margin-bottom: 20px;
+}
+
+.booking-info__button {
+  margin: 15px 5px;
+  padding: 7px 15px;
+  text-transform: capitalize;
+  background-color: #baed29;
+  border: none;
+  border-radius: 15px;
+}
+
+.booking-section__image img {
+  width: 550px;
+}
+
+/* our team section  */
+.team-section {
+  margin-top: 30px;
+}
+
+.team-section__title {
+  text-align: center;
+  font-size: 2rem;
+  color: #272640;
+  margin-bottom: 20px;
+}
+
+.team-section__subtitle {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  color: #979797;
+  margin-bottom: 20px;
+}
+
+/* our team section  --cards*/
+.team-section__cards {
+  display: flex;
+  justify-content: center;
+}
+
+.team-card {
+  margin: 25px;
+  padding: 10px;
+  width: 280px;
+  background: #ffffff;
+  box-shadow: 0px 13.0963px 43px rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+  border: 2px solid rgba(186, 237, 41, 1);
+}
+
+.team-card__name {
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #272640;
+}
+
+.team-card__position {
+  text-align: left;
+  font-size: 0.9rem;
+  color: #979797;
+}
+
+.fa-whatsapp {
+  font-size: 1.8rem;
+  color: #baed29;
+  position: relative;
+  left: 100px;
+  top: -13px;
+}
+
+.team-card__image {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.div-for-btn {
+  text-align: center;
+  width: 150px;
+  margin: 15px auto;
+}
+
+.team-section__button {
+  padding: 7px 15px;
+  text-transform: capitalize;
+  background-color: #baed29;
+  border: none;
+  border-radius: 15px;
+}
